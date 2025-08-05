@@ -37,7 +37,7 @@ const Header = () => {
   };
 
   return (
-    <header className={`fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-gray-200 transition-all duration-300 ${isVisible ? 'translate-y-0 opacity-100' : '-translate-y-full opacity-0'}`}>
+    <header className={`fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-gray-200 transition-all duration-700 ease-in-out ${isVisible ? 'translate-y-0 opacity-100' : '-translate-y-full opacity-0'}`}>
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-3">
@@ -93,6 +93,13 @@ const Header = () => {
               </SheetTrigger>
               <SheetContent side="right" className="w-[280px] sm:w-[400px]">
                 <nav className="flex flex-col space-y-6 mt-6">
+                  <Button 
+                    variant="professional" 
+                    onClick={() => scrollToSection('contact')}
+                    className="w-full"
+                  >
+                    Get Started
+                  </Button>
                   <button 
                     onClick={() => scrollToSection('home')}
                     className="text-left text-lg text-gray-600 hover:text-brand-navy transition-colors duration-300"
@@ -117,13 +124,6 @@ const Header = () => {
                   >
                     Contact
                   </button>
-                  <Button 
-                    variant="professional" 
-                    onClick={() => scrollToSection('contact')}
-                    className="mt-4 w-full"
-                  >
-                    Get Started
-                  </Button>
                 </nav>
               </SheetContent>
             </Sheet>
