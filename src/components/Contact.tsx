@@ -3,7 +3,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
-import { Phone, Mail, MapPin, Clock } from "lucide-react";
+import { Phone, Mail, Globe, Clock } from "lucide-react";
 
 const Contact = () => {
   const handleSubmit = (e: React.FormEvent) => {
@@ -74,7 +74,7 @@ const Contact = () => {
 
                 <div className="flex items-center space-x-4">
                   <div className="w-12 h-12 bg-brand-navy/10 rounded-lg flex items-center justify-center">
-                    <MapPin className="h-5 w-5 text-brand-navy" />
+                    <Globe className="h-5 w-5 text-brand-navy" />
                   </div>
                   <div>
                     <div className="font-medium text-gray-900">Service Area</div>
