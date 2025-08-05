@@ -1,3 +1,5 @@
+import { Phone, Mail, Globe } from "lucide-react";
+
 const Footer = () => {
   return (
     <footer className="bg-gray-900 text-gray-300 py-12">
@@ -29,20 +31,29 @@ const Footer = () => {
 
           <div className="space-y-4">
             <h3 className="text-lg font-semibold text-gray-100">Contact</h3>
-            <div className="space-y-2">
-              <a 
-                href="tel:718-986-5483" 
-                className="text-gray-400 hover:text-gray-200 transition-colors"
-              >
-                718-986-5483
-              </a>
-              <a 
-                href="mailto:chay@grayscalebooks.com" 
-                className="text-gray-400 hover:text-gray-200 transition-colors"
-              >
-                chay@grayscalebooks.com
-              </a>
-              <p className="text-gray-400">New York Metro Area</p>
+            <div className="space-y-3">
+              <div className="flex items-center space-x-2">
+                <Phone className="h-4 w-4 text-gray-400" />
+                <a 
+                  href="tel:718-986-5483" 
+                  className="text-gray-400 hover:text-gray-200 transition-colors"
+                >
+                  718-986-5483
+                </a>
+              </div>
+              <div className="flex items-center space-x-2">
+                <Mail className="h-4 w-4 text-gray-400" />
+                <a 
+                  href="mailto:chay@grayscalebooks.com" 
+                  className="text-gray-400 hover:text-gray-200 transition-colors"
+                >
+                  chay@grayscalebooks.com
+                </a>
+              </div>
+              <div className="flex items-center space-x-2">
+                <Globe className="h-4 w-4 text-gray-400" />
+                <p className="text-gray-400">New York Metro Area</p>
+              </div>
             </div>
           </div>
         </div>
